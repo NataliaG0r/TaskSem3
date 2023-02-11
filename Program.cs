@@ -63,3 +63,19 @@ System.Console.WriteLine($"Расстояние = {result}");
 
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
+
+System.Console.Write("Введите число N: ");
+int n = Convert.ToInt32(Console.ReadLine());
+
+if (n > 0)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        System.Console.Write($"{Math.Pow(i, 3)} ");
+    }
+    System.Console.WriteLine();
+}
+else
+{
+    System.Console.WriteLine("Число N меньше единицы!");
+}
